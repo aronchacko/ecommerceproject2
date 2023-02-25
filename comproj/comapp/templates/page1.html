@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!---link rel="stylesheet" href="./style.css"--->
+    
+
+    <title>GoTrend.com</title>
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    color:black;
+    font-weight: 600;
+}
+.navbar-brand{
+    color: black;
+    font-family:fantasy;
+    font-size: 30px;
+    font-weight: 800;
+}
+.carousel-caption{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-80%);
+    left: -8%
+
+}
+.carousel-caption h1{
+    font-size: 50px;
+    font-weight: 600;
+    color:black
+}
+
+.carousel-caption p{
+    color:black;
+    font-weight: 600;
+
+}
+
+.button {
+    background-color: #04A;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+.button4 {border-radius: 12px;}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .collection input{
+    position:inherit;
+    height: 30px;
+    width: 253px;
+    background-color:transparent;
+    color:green;
+    opacity: 0;
+    
+  } 
+.collection .card:hover input{
+    opacity: 1;
+    transition: 1s;
+}
+.parallex{
+    background:url(https://cosmicbook.news/sites/default/files/join-the-league.jpg)no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width:100%;
+}
+.parallex h1{
+    
+    font-weight: 500;
+}
+.parallex p{
+    font-family: cursive;
+}
+.btn2{
+    background-color:transparent;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border:2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: white;
+    color: black;
+}
+.contact input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border:1px solid black;
+    color:gray;
+    background-color: white;
+    padding: 10px;
+}
+.btn6{
+    background-color: #4CAF50;
+    color: beige;
+    height: 30px;
+    width: 100px;
+    
+}
+.btn6:hover{
+    background-color: white;
+    color: green;
+}
+.btn6 {border-radius: 5px;}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        
+        <a class="navbar-brand pl-10" href="#"><img src="https://media.baamboozle.com/uploads/images/50597/1623978270_16825_gif-url.gif" alt="logo" style="width:50px;"> GoTrend</a> <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown"></div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link pr-5" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle pr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Her Trends</a>
+                <a class="dropdown-item" href="{% url 'contactpage' %}">His Trends</a>
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Kid Trends</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pr-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pricing</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Rs.20,000 and Below</a>
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Rs.20,000 - Rs. 40,000 </a>
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Rs.40,000 - Rs. 60,000</a>
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Rs.60,000 - Rs. 80,000</a>
+                <a class="dropdown-item" href="{% url 'contactpage' %}">Rs.80,000 - Rs. 1,00,000</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-5" href="{% url 'loginpage' %}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pr-5" href="{% url 'signuppage' %}">Sign Up</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link pr-5" href="{% url 'contactpage' %}">Explore</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-----END of this section-->
+
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://233e5r7tfnv3se11m26d4k8g-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/shutterstock_500356678-scaled.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                    <div class="row justify-content-start text-left">
+                        <div class="col-lg-10 mx-auto">
+                            <p>Has Just Arrived!</p>
+                            <h1>Get Start</h1>
+                            <h1>Your Favorite Shopping</h1>
+                            <button class="button button4">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://img.freepik.com/photos-gratuite/portrait-belle-jeune-fille-blonde-tendre-robe-blanche-levant-mains-hourra-oui-victo_1258-93012.jpg?w=2000" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                    <div class="row justify-content-start text-right">
+                        <div class="col-lg-10 mx-auto">
+                            <p>Order Now!</p>
+                            <h1>Get Upto 40% Off</h1>
+                            <h1>New Arrivals!</h1>
+                            <button class="button button4">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://img.freepik.com/foto-gratis/foto-hombre-jugueton-dando-caballito-su-novia_273609-25326.jpg?w=2000" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                    <div class="row justify-content-start text-right">
+                        <div class="col-lg-10 mx-auto">
+                            <p>Live in style with</p>
+                            <h1>GoTrend!</h1>
+                            <i><h6 style="color:black">Your Complete Shopping Destination</h6></i>
+                            <button class="button button4">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+
+      <!--end of this section-->
+      
+      <br>
+
+        <section class="collection">
+            <div class="container">
+                <b><h1 class="text-left">B E S T &nbsp&nbsp O F &nbsp&nbsp G O T R E N D &nbsp&nbsp B R A N D S</h1></b>
+                <div class="row py-5">
+                    <div class="col-lg-3">
+                        <div class="card mb-3">
+                            <img src="https://images.unsplash.com/photo-1581338834647-b0fb40704e21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHwxMTM5ODU2NXx8ZW58MHx8fHw%3D&w=1000&q=80" class="img-fluid" alt="">
+                            <input type="button" value="Buy Now">
+                            <h6 style="text-align:center">White Shirt & Blue Denim</h6>
+                            <p style="text-align:center; color: green;"><small><b>₹22,999</b></small></p>
+                        
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card mb-3">
+                            <img src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80" class="img-fluid" alt="">
+                            <input type="button" value="Buy Now">
+                            <h6 style="text-align:center">Black Suit Jacket and Black Pants</h6>
+                            <p style="text-align:center; color: green;"><small><b>₹28,999</b></small></p>
+                        
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/flagged/photo-1555895312-fc2610acaeb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpZHMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" width="400" height="300" class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center">Sweatsuit for Kids</h6>
+                        <p style="text-align:center; color: green;"><small><b>₹8,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1553143820-6bb68bc34679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fG1lbiUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" width="700" height="300" class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center"> Givenchy T-shirts for Men</h6>
+                        <p style="text-align:center; color: green;"><small><b>₹85,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1603233176974-0a4333ee6078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fG1lbiUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"  class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center"> Tom Ford Sunglass Combo</h6>
+                        <p style="text-align:center; color: green;"><small><b>₹35,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1513094735237-8f2714d57c13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"  class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center">Red Gucci </h6>
+                        <p style="text-align:center; color: green;"><small><b>₹45,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center">Grey Denim Shorts </h6>
+                        <p style="text-align:center; color: green;"><small><b>₹65,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1533512930330-4ac257c86793?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGtpZHMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center">Denim Collections for Infants</h6>
+                        <p style="text-align:center; color: green;"><small><b>₹35,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parallex py-5".>
+            <div class="container py-5 text-white text-center">
+                <div class="row py-3">
+                    <div class="mx-auto">
+                        <h1>Exclusive Superhero Merchandises</h1>
+                        <p class="py-3">Superhero T Shirts and Other Official Superhero Merchandises online in India at GoTrends.<br> 
+                            Browse the collection of Superhero T-shirt, Joggers,Jackets and Hoddies. </p>
+                            <buttton class="btn2 mr-1">Make A Deal</buttton>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!---End of parallex-->
+
+    <br>
+    <br>
+
+    <section class="collection">
+        <div class="container">
+            <b><h1 class="text-left">D E A L S &nbsp&nbsp O N &nbsp&nbsp T O P&nbsp&nbsp B R A N D S</h1></b>
+            <div class="row py-5">
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1618333452884-5c8d211ed2ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center">Premimum Leather Jackets</h6>
+                        <p style="text-align:center; color: green;"><small><b>₹22,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mb-3">
+                        <img src="https://images.unsplash.com/photo-1508243771214-6e95d137426b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVuJTIwZmFzaGlvbiUyMGJsYWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="img-fluid" alt="">
+                        <input type="button" value="Buy Now">
+                        <h6 style="text-align:center">Black Suit</h6>
+                        <p style="text-align:center; color: green;"><small><b>₹38,999</b></small></p>
+                    
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://images.unsplash.com/photo-1499971442178-8c10fdf5f6ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWVuJTIwZmFzaGlvbiUyMGJsYWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  class="img-fluid" alt="">
+                    <input type="button" value="Buy Now">
+                    <h6 style="text-align:center">Crew Neck T-Shirts</h6>
+                    <p style="text-align:center; color: green;"><small><b>₹8,999</b></small></p>
+                
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://images.unsplash.com/photo-1553845911-9e88516bdcbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdvbWVuJTIwZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" width="700" height="300" class="img-fluid" alt="">
+                    <input type="button" value="Buy Now">
+                    <h6 style="text-align:center"> Givenchy Yellow-shirts for Women</h6>
+                    <p style="text-align:center; color: green;"><small><b>₹85,999</b></small></p>
+                
+                </div>
+
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    
+        <section class="contact bg-light pt-5 text-center">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-lg-7 mx-auto">
+                        <input type="text" placeholder="Enter Your Email Address">
+                        <button class="btn6 my-5">Subscribe</button>
+                        <p>Demo E-commerce Website Designed and Developed by Aron</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

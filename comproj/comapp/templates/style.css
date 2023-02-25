@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-link{
+    color:black;
+    font-weight: 600;
+}
+.navbar-brand{
+    color: black;
+    font-family:fantasy;
+    font-size: 30px;
+    font-weight: 800;
+}
+.carousel-caption{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-80%);
+    left: -8%
+
+}
+.carousel-caption h1{
+    font-size: 50px;
+    font-weight: 600;
+    color:black
+}
+
+.carousel-caption p{
+    color:black;
+    font-weight: 600;
+
+}
+
+.button {
+    background-color: #04A;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+.button4 {border-radius: 12px;}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .collection input{
+    position:inherit;
+    height: 30px;
+    width: 253px;
+    background-color:transparent;
+    color:green;
+    opacity: 0;
+    
+  } 
+.collection .card:hover input{
+    opacity: 1;
+    transition: 1s;
+}
+.parallex{
+    background:url(https://cosmicbook.news/sites/default/files/join-the-league.jpg)no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width:100%;
+}
+.parallex h1{
+    
+    font-weight: 500;
+}
+.parallex p{
+    font-family: cursive;
+}
+.btn2{
+    background-color:transparent;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border:2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: white;
+    color: black;
+}
+.contact input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border:1px solid black;
+    color:gray;
+    background-color: white;
+    padding: 10px;
+}
+.btn6{
+    background-color: #4CAF50;
+    color: beige;
+    height: 30px;
+    width: 100px;
+    
+}
+.btn6:hover{
+    background-color: white;
+    color: green;
+}
+.btn6 {border-radius: 5px;}
